@@ -11,9 +11,9 @@
     <body>
         <h1>Car Cam</h1> 
 
-      <iframe width=”4000” height=”2000” frameborder="0" src="/html/min.php" scrolling="no" ></iframe> 
+    
 
-      
+      <iframe src="/html/min.php" style="border: 0; width: 100%; height: 100%"> scrolling="no" </iframe>
     
         <br>
 
