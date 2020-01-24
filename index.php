@@ -13,7 +13,7 @@
     <body>
         <h1>Car Cam</h1> 
 
-      <iframe width=”1080” height=”720” src="/html/min.php" frameborder="0" allowfullscreen></iframe> 
+      <iframe width=”1080” height=”720” src="/html/min.php" ></iframe> 
 
     
         <br>
