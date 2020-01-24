@@ -5,21 +5,15 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="Style.css">
 
-        <script>
-            function resizeIframe(obj) 
-                {
-                obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-                }
-        </script>
 
     </head>
 
     <body>
         <h1>Car Cam</h1> 
 
-      <iframe width=”1080” height=”720” src="/html/min.php" ></iframe> 
+      <iframe width=”4000” height=”2000” frameborder="0" src="/html/min.php" scrolling="no" ></iframe> 
 
-      <iframe src="/html/min.php" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe> 
+      
     
         <br>
 
