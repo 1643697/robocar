@@ -3,11 +3,15 @@
     <head>
         <title>RoboGuard</title>
         <meta charset="UTF-8">
-        <h1> 
-            hello
-        </h1>
-
         <link rel="stylesheet" href="Style.css">
+
+        <script>
+            function resizeIframe(obj) 
+                {
+                obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+                }
+        </script>
+
     </head>
 
     <body>
@@ -15,6 +19,7 @@
 
       <iframe width=”1080” height=”720” src="/html/min.php" ></iframe> 
 
+      <iframe src="/html/min.php" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe> 
     
         <br>
 
