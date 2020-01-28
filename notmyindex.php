@@ -19,16 +19,8 @@
       </div>
 	        <div class="container-fluid text-center liveimage">
          <div><img id="mjpeg_dest" onclick="toggle_fullscreen(this);" src="cam_pic.php?time=1580237211861&amp;pDelay=16666"></div>
-
-        
       </div>
       
-      <div id="secondary-buttons" class="container-fluid text-center">
-                           <a href="preview.php" class="btn btn-default">Download Videos and Images</a>
-         &nbsp;&nbsp;
-         <a href="motion.php" class="btn btn-default">Edit motion settings</a>&nbsp;&nbsp;         <a href="schedule.php" class="btn btn-default">Edit schedule settings</a>
-      </div>
-    
       <div class="container-fluid text-center">
          <div class="panel-group" id="accordion">
             <div class="panel panel-default">
