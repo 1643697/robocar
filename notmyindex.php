@@ -1,11 +1,11 @@
 <html><head>
       <meta name="viewport" content="width=550, initial-scale=1">
-      <title>RPi Cam Control v6.6.7: mycam@raspberrypi</title>
-      <link rel="stylesheet" href="css/style_minified.css">
-      <link rel="stylesheet" href="css/es_Default.css">
+      <title>RoboGuard</title>
+    
       <script src="js/style_minified.js"></script>
       <script src="js/script.js"></script>
-      <script src="js/pipan.js"></script>
+
+    <!--  <script src="js/pipan.js"></script>    -->
    </head>
 
 
