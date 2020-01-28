@@ -17,7 +17,17 @@
     
       <div><img id="mjpeg_dest" onclick="toggle_fullscreen(this);" src="cam_pic.php?time=1580237946234&amp;pDelay=16666" class=""></div>
 
-
+      <div class="container-fluid text-center liveimage">
+         <div><img id="mjpeg_dest" onclick="toggle_fullscreen(this);" src="cam_pic.php?time=1580239409150&amp;pDelay=16666" class=""></div>
+         <div id="main-buttons">
+            <input id="video_button" type="button" class="btn btn-primary" value="record video start">
+            <input id="image_button" type="button" class="btn btn-primary" value="record image">
+            <input id="timelapse_button" type="button" class="btn btn-primary" value="timelapse start">
+            <input id="md_button" type="button" class="btn btn-primary" value="motion detection start">
+            <input id="halt_button" type="button" class="btn btn-danger" value="stop camera">
+         </div>
+      </div>
+      
         <br>
 
         <a href="next.php">Cat facts</a>
