@@ -1,7 +1,8 @@
 <html><head>
       <meta name="viewport" content="width=550, initial-scale=2"> 
-      <title>RoboGuard</title>
-      <!--  <script src="js/script.js"></script> -->
+      <title> RoboGuard</title>
+      
+      <script src="js/script.js"></script>   <!-- Bread and butter for stream functionality-->
 </head>
 
    <body onload="setTimeout('init(0, 60, 1);', 100);">
