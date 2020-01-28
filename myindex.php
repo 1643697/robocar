@@ -8,7 +8,7 @@
 
     </head>
 
-    <body>
+    <body onload="setTimeout('init(0, 60, 1);', 100);">
         <h1>Car Cam</h1> 
 
      
