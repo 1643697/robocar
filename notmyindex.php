@@ -2,10 +2,10 @@
       <meta name="viewport" content="width=550, initial-scale=2"> 
       <title>RoboGuard</title>
     
-      <!--  <script src="js/style_minified.js"></script>    -->
-      <script src="js/script.js"></script>
+      
+      <!--  <script src="js/script.js"></script> -->
 
-    <!--  <script src="js/pipan.js"></script>    -->
+  
    </head>
 
 
