@@ -32,19 +32,19 @@
 
         
         function button1() { 
-            $output = `.control/up.sh`;
+            $output = `./control/up.sh`;
             echo "<div>$output</div>";
         } 
         function button2() { 
-            $output = `.control/left.sh`;
+            $output = `./control/left.sh`;
             echo "<div>$output</div>"; 
         } 
         function button3() { 
-            $output = `.control/down.sh`;
+            $output = `./control/down.sh`;
             echo "<div>$output</div>";
         } 
         function button4() { 
-            $output = `.control/right.sh`;
+            $output = `./control/right.sh`;
             echo "<div>$output</div>";
         } 
     ?> 
@@ -55,7 +55,7 @@
         <input type="submit" name="button1"  class="button" value="Button1" /> 
 
         <br>
-        
+
         <input type="submit" name="button2" class="button" value="Button2" /> 
 
         <input type="submit" name="button3" class="button" value="Button3" /> 
