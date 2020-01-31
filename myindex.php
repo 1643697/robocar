@@ -29,26 +29,33 @@
         else if(array_key_exists('button4', $_POST)) { 
           button4(); 
         } 
+
+        
         function button1() { 
-            echo "This is UP that is selected"; 
-            $output = `./hello.sh`;
+            $output = `.control/up.sh`;
             echo "<div>$output</div>";
         } 
         function button2() { 
-            echo "This is Button2 that is selected"; 
+            $output = `.control/left.sh`;
+            echo "<div>$output</div>"; 
         } 
         function button3() { 
-            echo "This is Button3 that is selected"; 
+            $output = `.control/down.sh`;
+            echo "<div>$output</div>";
         } 
         function button4() { 
-            echo "This is Button4 that is selected"; 
+            $output = `.control/right.sh`;
+            echo "<div>$output</div>";
         } 
     ?> 
-  
+  <center>
+
     <form method="post"> 
 
         <input type="submit" name="button1"  class="button" value="Button1" /> 
-          
+
+        <br>
+        
         <input type="submit" name="button2" class="button" value="Button2" /> 
 
         <input type="submit" name="button3" class="button" value="Button3" /> 
@@ -56,7 +63,7 @@
         <input type="submit" name="button4" class="button" value="Button4" /> 
 
     </form> 
-
+  </center>
 
 
  </body>
