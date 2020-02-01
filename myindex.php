@@ -50,7 +50,7 @@
     ?> 
   <center>
 
-    <form method="post"> 
+    <form method="post" target "frame" >  <!-- the target send the form post to the iframe whch is hidden by css-->
 
         <input type="submit" name="button1"  class="button" value="Button1" /> 
 
@@ -65,6 +65,7 @@
     </form> 
   </center>
 
+  <iframe name="frame"></iframe>    <!---- this is a dummy iframe the form will be sent here so my page wont refresh. the css then hides the iframe--->
 
  </body>
 </html>
