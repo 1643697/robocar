@@ -30,10 +30,10 @@
         else if(array_key_exists('button4', $_POST)) { 
           button4(); 
         } 
-        else if(array_key_exists('record', $_POST)) { 
+        else if(array_key_exists('button5', $_POST)) { 
           record(); 
         } 
-        else if(array_key_exists('stoprecord', $_POST)) { 
+        else if(array_key_exists('button6', $_POST)) { 
           stoprecord(); 
         } 
 
@@ -71,11 +71,15 @@
 
   <center>
 
-      <form method="post" target "frame" >  <!-- the target send the form post to the iframe whch is hidden by css-->
+      <form method="post"  >  <!-- the target send the form post to the iframe whch is hidden by css-->
 
         <input type="submit" name="record"  class="button" value="record" /> 
 
         <input type="submit" name="stoprecord" class="button" value="stoprecord" /> 
+
+    </form> 
+
+    <form method="post" target="frame" >  <!-- the target send the form post to the iframe whch is hidden by css-->
 
         <input type="submit" name="button1"  class="button" value="Button1" /> 
 
