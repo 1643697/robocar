@@ -14,6 +14,10 @@
       <div><img id="mjpeg_dest" /></div>
     </center>
 
+    <form action="<?=$_SERVER['PHP_SELF'];?>" method="post">
+    <input type="button" name="submit" value="Submit">
+    </form>
+
     <?php
     //The array_key_exists() is an inbuilt function of PHP and is used to check whether a 
     //specific key or index is present inside an array or not
@@ -47,6 +51,21 @@
             $output = `./control/right.sh`;
             echo "<div>$output</div>";
         } 
+
+        function foo() 
+        {
+          $output = `./control/right.sh`;
+          echo "<div>$output</div>";
+        }
+
+        
+        if(isset($_POST['submit'])) {
+          foo();
+          }
+         
+
+
+
     ?> 
   <center>
 
