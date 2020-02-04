@@ -71,16 +71,11 @@
 
   <center>
 
-      <form method="post"  >  <!-- the target send the form post to the iframe whch is hidden by css-->
+      <form method="post" target "frame" >  <!-- the target send the form post to the iframe whch is hidden by css-->
 
         <input type="submit" name="record"  class="button" value="record" /> 
 
         <input type="submit" name="stoprecord" class="button" value="stoprecord" /> 
-
-     </form> 
-
-
-    <form method="post" target "frame" >  <!-- the target send the form post to the iframe whch is hidden by css-->
 
         <input type="submit" name="button1"  class="button" value="Button1" /> 
 
