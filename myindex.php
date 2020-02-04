@@ -14,10 +14,7 @@
       <div><img id="mjpeg_dest" /></div>
     </center>
 
-    <form action="<?=$_SERVER['PHP_SELF'];?>" method="post">
-    <input type="button" name="submit" value="Submit">
-    </form>
-
+  
     <?php
     //The array_key_exists() is an inbuilt function of PHP and is used to check whether a 
     //specific key or index is present inside an array or not
@@ -32,6 +29,12 @@
         } 
         else if(array_key_exists('button4', $_POST)) { 
           button4(); 
+        } 
+        else if(array_key_exists('record', $_POST)) { 
+          record(); 
+        } 
+        else if(array_key_exists('stoprecord', $_POST)) { 
+          stoprecord(); 
         } 
 
         
@@ -52,22 +55,30 @@
             echo "<div>$output</div>";
         } 
 
-        function foo() 
-        {
-          $output = `./control/right.sh`;
+        function record() { 
+          $output = `./control/down.sh`;
           echo "<div>$output</div>";
-        }
-
-        
-        if(isset($_POST['submit'])) {
-          foo();
-          }
-         
-
-
-
+        } 
+        function stoprecord() { 
+            $output = `./control/right.sh`;
+            echo "<div>$output</div>";
+        } 
     ?> 
+
+
+
+
+
   <center>
+
+      <form method="post"  >  <!-- the target send the form post to the iframe whch is hidden by css-->
+
+        <input type="submit" name="record"  class="button" value="record" /> 
+
+        <input type="submit" name="stoprecord" class="button" value="stoprecord" /> 
+
+     </form> 
+
 
     <form method="post" target "frame" >  <!-- the target send the form post to the iframe whch is hidden by css-->
 
