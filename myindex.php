@@ -74,6 +74,7 @@
         <input type="submit" name="button6" class="button" value="Stop Record" /> 
 
         <br>
+        <br>
         <input type="submit" name="button1"  class="button" value="Up" /> 
 
         <br>
