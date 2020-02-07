@@ -11,7 +11,7 @@
   <body onload="setTimeout('init();', 100);">
     <center>
       <h1>Car Cam</h1> 
-      <div><img id="mjpeg_dest" /></div>
+      <img id="mjpeg_dest" height="500" width="800" />
     </center>
 
   
