@@ -10,8 +10,8 @@
 
   <body onload="setTimeout('init();', 100);">
     <center>
-      <h1>Car Cam</h1> 
-      <img id="mjpeg_dest" height="500" width="800" />
+      <h1>Car Cam</h1>  
+      <img id="mjpeg_dest" height="500" width="800" />  <!--can you make this the native resolution ----->
     </center>
 
   
