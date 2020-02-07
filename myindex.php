@@ -31,10 +31,10 @@
           button4(); 
         } 
         else if(array_key_exists('button5', $_POST)) { 
-          record(); 
+          button5(); 
         } 
         else if(array_key_exists('button6', $_POST)) { 
-          stoprecord(); 
+          button6(); 
         } 
 
         
