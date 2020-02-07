@@ -69,20 +69,20 @@
 
     <form method="post" target="frame" >  <!-- the target send the form post to the iframe whch is hidden by css-->
 
-        <input type="submit" name="button5" class="button" value="button5" /> 
+        <input type="submit" name="button5" class="button" value="Record" /> 
 
-        <input type="submit" name="button6" class="button" value="button6" /> 
-
-        <br>
-        <input type="submit" name="button1"  class="button" value="Button1" /> 
+        <input type="submit" name="button6" class="button" value="Stop Record" /> 
 
         <br>
+        <input type="submit" name="button1"  class="button" value="Up" /> 
 
-        <input type="submit" name="button2" class="button" value="Button2" /> 
+        <br>
 
-        <input type="submit" name="button3" class="button" value="Button3" /> 
+        <input type="submit" name="button2" class="button" value="Left" /> 
 
-        <input type="submit" name="button4" class="button" value="Button4" /> 
+        <input type="submit" name="button3" class="button" value="Down" /> 
+
+        <input type="submit" name="button4" class="button" value="Right" /> 
 
     </form> 
   </center>
