@@ -54,15 +54,13 @@
             $output = `./control/right.sh`;
             echo "<div>$output</div>";
         } 
+        function button5() { 
+          `echo 'ca 1' >/var/www/html/FIFO`;
+        } 
+        function button6() { 
+          `echo 'ca 0' >/var/www/html/FIFO`;
+         } 
 
-        function record() { 
-          $output = `./control/down.sh`;
-          echo "<div>$output</div>";
-        } 
-        function stoprecord() { 
-            $output = `./control/right.sh`;
-            echo "<div>$output</div>";
-        } 
     ?> 
 
 
@@ -71,16 +69,17 @@
 
   <center>
 
-      <form method="post"  >  <!-- the target send the form post to the iframe whch is hidden by css-->
+      <form method="post"  >  
 
-        <input type="submit" name="record"  class="button" value="record" /> 
+        <input type="submit" name="Record" class="button" value="Button5" /> 
 
-        <input type="submit" name="stoprecord" class="button" value="stoprecord" /> 
+        <input type="submit" name="Stop Record" class="button" value="Button6" /> 
 
     </form> 
 
     <form method="post" target="frame" >  <!-- the target send the form post to the iframe whch is hidden by css-->
 
+        <br>
         <input type="submit" name="button1"  class="button" value="Button1" /> 
 
         <br>
