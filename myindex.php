@@ -71,9 +71,9 @@
 
       <form method="post"  >  
 
-        <input type="submit" name="Record" class="button" value="Button5" /> 
+        <input type="submit" name="button5" class="button" value="Record" /> 
 
-        <input type="submit" name="Stop Record" class="button" value="Button6" /> 
+        <input type="submit" name="button6" class="button" value="Stop Record" /> 
 
     </form> 
 
