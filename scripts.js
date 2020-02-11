@@ -19,12 +19,16 @@ function init() {
 
 function Recordalert() {
   var d = new Date();
-  document.getElementById("p1").innerHTML = "Recording Started     ";
+  var str = "Recording Started";
+  var result = str.fontcolor("green");
+  document.getElementById("p1").innerHTML = result;
   document.getElementById("p2").innerHTML = d; 
 }
 
 function FinishedRecordalert() {
   var d = new Date();
-  document.getElementById("p1").innerHTML = "Recording Stopped     ";
+  var str1 = "Recording Stopped ";
+  var result1 = str1.fontcolor("red");
+  document.getElementById("p1").innerHTML = result1;
   document.getElementById("p2").innerHTML = d; 
 }

@@ -63,8 +63,8 @@
 
     ?> 
   <center>
-    <p id="p1">RECORD</p>
-    <p id="p2">DATE</p>
+    <p id="p1"> </p>
+    <p id="p2"> </p>
 
     <form method="post" target="frame" >  <!-- the target send the form post to the iframe whch is hidden by css-->
 
