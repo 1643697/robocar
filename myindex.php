@@ -69,9 +69,9 @@
 
     <form method="post" target="frame" >  <!-- the target send the form post to the iframe whch is hidden by css-->
 
-        <input onclick="Recordalert()" type="submit" name="button5" class="button" value="Record" /> 
+        <input id="success-btn" type="submit" name="button5" class="button" value="Record" /> 
 
-        <input onclick="FinishedRecordalert()" type="submit" name="button6" class="button" value="Stop Record" /> 
+        <input id="failure-btn" type="submit" name="button6" class="button" value="Stop Record" /> 
 
         <br>
         <br>
@@ -86,6 +86,12 @@
         <input type="submit" name="button4" class="button" value="Right" /> 
 
     </form> 
+
+        <div class="alert-box success">Successful Alert !!!</div>
+        <div class="alert-box failure">Failure Alert !!!</div>
+
+
+
   </center>
 
   <iframe name="frame"></iframe>    <!---- this is a dummy iframe the form will be sent here so my page wont refresh. the css then hides the iframe--->
