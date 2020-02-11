@@ -5,7 +5,7 @@
     <title>RoboGuard</title>
     <meta charset="UTF-8">
       <link rel="stylesheet" href="Style.css">
-    <script src="script_min.js"></script>
+    <script src="scripts.js"></script>
   </head>
 
   <body onload="setTimeout('init();', 100);">
