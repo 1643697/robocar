@@ -69,9 +69,9 @@
 
     <form method="post" target="frame" >  <!-- the target send the form post to the iframe whch is hidden by css-->
 
-        <input type="submit" name="button5" class="button" value="Record" /> 
+        <input onclick="Recordalert()" type="submit" name="button5" class="button" value="Record" /> 
 
-        <input type="submit" name="button6" class="button" value="Stop Record" /> 
+        <input onclick="FinishedRecordalert()" type="submit" name="button6" class="button" value="Stop Record" /> 
 
         <br>
         <br>

@@ -12,3 +12,12 @@ function init() {
   mjpeg_img.onerror = error_img;
   reload_img();
 }
+
+
+function Recordalert() {
+  alert("Recording Started");
+}
+
+function FinishedRecordalert() {
+  alert("Recording Finished");
+}
