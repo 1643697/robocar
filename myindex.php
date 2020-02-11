@@ -62,10 +62,9 @@
          } 
 
     ?> 
-
-    <p id="p1">Hello World!</p>
-
   <center>
+    <p id="p1">RECORD</p>
+    <p id="p2">DATE</p>
 
     <form method="post" target="frame" >  <!-- the target send the form post to the iframe whch is hidden by css-->
 

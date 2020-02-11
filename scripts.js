@@ -1,4 +1,5 @@
 var mjpeg_img;
+var d = new Date();
 
 function reload_img () {
   mjpeg_img.src = "cam_pic.php?time=" + new Date().getTime();
@@ -14,12 +15,15 @@ function init() {
 }
 
 
+
+
 function Recordalert() {
 
-  document.getElementById("p1").innerHTML = "Recording Started";
-
+  document.getElementById("p1").innerHTML = "Recording Started     ";
+  document.getElementById("p2").innerHTML = d; 
 }
 
 function FinishedRecordalert() {
-  alert("Recording Finished");
+  document.getElementById("p1").innerHTML = "Recording Stopped     ";
+  document.getElementById("p2").innerHTML = d; 
 }
