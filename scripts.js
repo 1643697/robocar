@@ -15,7 +15,9 @@ function init() {
 
 
 function Recordalert() {
-  printf("Recording Started");
+
+  document.getElementById("p1").innerHTML = "Recording Started";
+
 }
 
 function FinishedRecordalert() {
