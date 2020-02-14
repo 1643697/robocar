@@ -16,8 +16,8 @@
 
   
     <?php
-    //The array_key_exists() is an inbuilt function of PHP and is used to check whether a 
-    //specific key or index is present inside an array or not
+    //The array_key_exists() checks which button is pressed by looking at what is present in the array
+    //If present it runs that buttons function
         if(array_key_exists('button1', $_POST)) { 
             button1(); 
         } 
@@ -37,7 +37,8 @@
           button6(); 
         } 
 
-        
+        //Code between back ticks or (`) will be execute on the Pi
+        //Depending on what button is pressed the indicated Bash script is executed 
         function button1() { 
             $output = `./control/up.sh`;
             echo "<div>$output</div>";
@@ -54,6 +55,10 @@
             $output = `./control/right.sh`;
             echo "<div>$output</div>";
         } 
+
+        // the below functions utilize a command PIPE called FIFO
+        // executing the commands send the echo result and stored it to the indicated file path
+        // ca 1 and ca 0 are  keywords which start and stop video recording process  
         function button5() { 
           `echo 'ca 1' >/var/www/html/FIFO`;
         } 
@@ -62,13 +67,14 @@
          } 
 
     ?> 
+
   <center>
-    <p id="p1"> </p>
-    <p id="p2"> </p>
+    <p id="p1"> </p> <!-- Gets replaced with text showing recording/stop recording based on javascript--->
+    <p id="p2"> </p> <!-- Gets replaced with text showing date based on javascript--->
 
-    <form method="post" target="frame" >  <!-- the target send the form post to the iframe whch is hidden by css-->
+    <form method="post" target="frame" >  <!-- the target send the form post to the iframe which is then hidden by css-->
 
-        <input onclick="Recordalert()" type="submit" name="button5" class="button" value="Record" /> 
+        <input onclick="Recordalert()" type="submit" name="button5" class="button" value="Record" />  <!-- Calls up javascript to give user feedback--->
 
         <input onclick="FinishedRecordalert()" type="submit" name="button6" class="button" value="Stop Record" /> 
 

@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 #Data Declaration
 gpio -g mode 17 output
 

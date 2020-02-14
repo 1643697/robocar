@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Data Declaration
-gpio -g mode 22 output
+gpio -g mode 22 output 
 
 #Kill whatever direction was going on beforehand
 gpio -g write 17 0
@@ -28,3 +28,5 @@ echo "  "
 echo " Right:"
 gpio -g read 10 
 echo "  " 
+
+

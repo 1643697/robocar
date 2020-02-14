@@ -1,5 +1,4 @@
 var mjpeg_img;
-var d = new Date();
 
 function reload_img () {
   mjpeg_img.src = "cam_pic.php?time=" + new Date().getTime();
@@ -15,8 +14,7 @@ function init() {
 }
 
 
-
-
+var d = new Date();
 function Recordalert() {
   var d = new Date();
   var str = "Recording Started";
