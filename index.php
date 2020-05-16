@@ -74,11 +74,11 @@
         
         //The below function play an audi file stored within the mp3files directory
         function button7() { 
-          `omxplayer ./mp3files/Count of 10.mp3`;
+          `omxplayer ./mp3files/Countof10.mp3`;
         } 
 
         function button8() { 
-          `omxplayer ./mp3files/Keep the change.mp3`;
+          `omxplayer ./mp3files/Keepthechange.mp3`;
         } 
 
     ?> 
