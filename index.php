@@ -36,6 +36,12 @@
         else if(array_key_exists('button6', $_POST)) { 
           button6(); 
         } 
+        else if(array_key_exists('button7', $_POST)) { 
+          button7(); 
+        } 
+        else if(array_key_exists('button8', $_POST)) { 
+          button8(); 
+        }
 
         //Code between back ticks or (`) will be execute on the Pi
         //Depending on what button is pressed the indicated Bash script is executed 
@@ -64,7 +70,16 @@
         } 
         function button6() { 
           `echo 'ca 0' >/var/www/html/FIFO`;
-         } 
+        } 
+        
+        //The below function play an audi file stored within the mp3files directory
+        function button7() { 
+          `omxplayer ./mp3files/Count of 10.mp3`;
+        } 
+
+        function button8() { 
+          `omxplayer ./mp3files/Keep the change.mp3`;
+        } 
 
     ?> 
 
@@ -79,6 +94,11 @@
         <input onclick="FinishedRecordalert()" type="submit" name="button6" class="button" value="Stop Record" /> 
 
         <br>
+        <br>
+        <input type="submit" name="button7" class="button" value="Audio 1" /> 
+
+        <input type="submit" name="button8" class="button" value="Audio 2" /> 
+
         <br>
         <input type="submit" name="button1"  class="button" value="Up" /> 
 
