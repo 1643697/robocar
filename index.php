@@ -42,6 +42,9 @@
         else if(array_key_exists('button8', $_POST)) { 
           button8(); 
         }
+        else if(array_key_exists('button9', $_POST)) { 
+          button9(); 
+        }
 
         //Code between back ticks or (`) will be execute on the Pi
         //Depending on what button is pressed the indicated Bash script is executed 
@@ -81,6 +84,10 @@
           `omxplayer ./mp3files/Keepthechange.mp3`;
         } 
 
+        function button9() { 
+          `omxplayer ./mp3files/Thisismyhouse.mp3`;
+        } 
+
     ?> 
 
   <center>
@@ -96,9 +103,9 @@
         <br>
         <br>
         <input type="submit" name="button7" class="button" value="Audio 1" /> 
-
         <input type="submit" name="button8" class="button" value="Audio 2" /> 
-
+        <input type="submit" name="button9" class="button" value="Audio 3" /> 
+        <br>
         <br>
         <input type="submit" name="button1"  class="button" value="Up" /> 
 
