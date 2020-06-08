@@ -75,7 +75,7 @@
           `echo 'ca 0' >/var/www/html/FIFO`;
         } 
         
-        //The below function play an audi file stored within the mp3files directory
+        //The below function play an audio file stored within the mp3files directory
         function button7() { 
           `omxplayer ./mp3files/Countof10.mp3`;
         } 
